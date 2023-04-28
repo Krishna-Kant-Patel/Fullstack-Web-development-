@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery</title>
+    </head>
+    <body>
+        <h1>our custom title</h1>
+
+        <button class="custom-class">custom button</button>
+
+        <p class="custom-class">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quo numquam sit delectus. Exercitationem, soluta
+            atque. Saepe neque praesentium perspiciatis atque repudiandae eos
+            porro dignissimos quisquam mollitia! Officiis saepe veritatis aut!</p>
+        
+            <p id="kr" >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+            enim necessitatibus eaque, ipsam sint eum dolores explicabo aliquid
+            culpa placeat numquam assumenda officia quibusdam nostrum, dicta
+            tempora! Fuga, officiis obcaecati.
+        </p>
+
+        <h2>Dynamicaly change</h2>
+
+        <input type="text" value="Hello world">
+
+        <script src="
+            https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+            "></script>
+        <script>
+    $(document).ready(function(){
+        //$ == document.queryselector
+        $("h1").text("change via Jquery")
+        // $("p").html("<strong>this is bold</strong>")
+        $("p.custom-class").text("Change via Jquery #2")
+
+        $("h2").html("<h1>This is change<span> Dynamicly via Jquery</span></h>")
+
+            let value=$("input").val()
+            console.log(value)
+            $("input").val("Change value")
+            
+    })
+
+    
+</script>
+    </body>
+</html>
