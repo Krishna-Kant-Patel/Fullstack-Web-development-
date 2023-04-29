@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .toggl{
+            margin-top: 10%;
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            border-radius: 0 50% 0 50%;
+        }
+        .toggle{
+            height: 80px;
+            width: 120px;
+        }
+        .blue{
+            background-color: rgb(9, 9, 190);
+            
+        }
+    </style>
+</head>
+<body>
+    
+     <div class="toggl"></div>
+     <button class="toggle ">toggle</button>
+    <script src="
+https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+"></script>
+<script>
+    $(document).ready(function(){
+        const $class = $(".toggle")
+        var $d = $(".toggl")
+        $class.on("click", function (){
+            console.log("toggled")
+            // $d.toggleClass("blue")
+            $d.css("background-color", "red")
+            $d.animate({
+                opacity: 0.5,
+                width: "600px",
+                height: "600px"
+
+            })
+        })
+        $d.css({
+            backgroundColor: "yellow",
+            border: "15px solid blue",
+            borderRedius:"10px"
+
+        })
+    })
+
+    
+</script>
+</body>
+</html>
