@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.btn{
+  background-color: rgb(75, 49, 10);
+  border: 1px solid yellow;
+  color: yellowgreen;
+  padding: 20px;
+  font-size: 25px;
+}
+img{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+ul{
+  text-decoration: none;
+}
