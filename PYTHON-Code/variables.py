@@ -1,0 +1,4 @@
+
+course = "krishna"
+
+print(course)

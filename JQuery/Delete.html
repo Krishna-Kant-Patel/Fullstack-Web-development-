@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery</title>
+    </head>
+    <body>
+
+        <div>
+            <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                corporis deleniti cumque eos unde blanditiis accusamus doloribus
+                officiis labore cupiditate tenetur, quidem necessitatibus ad
+                iure nemo provident eligendi. Exercitationem, voluptates.</p>
+            <p class="second">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate dolorum sed est magnam cumque iusto. Nulla nihil
+                repudiandae necessitatibus cum quibusdam reiciendis alias
+                incidunt magni beatae quae, aliquid quia blanditiis!
+            </p>
+
+            <p class="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Distinctio perspiciatis voluptatibus eaque numquam maiores
+                dignissimos saepe velit. Consequatur, consequuntur. Repellendus
+                voluptatem commodi quaerat! Rem quibusdam placeat fugit eum
+                repellat at.</p>
+        </div>
+        <div id="parent">
+            <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                corporis deleniti cumque eos unde blanditiis accusamus doloribus
+                officiis labore cupiditate tenetur, quidem necessitatibus ad
+                iure nemo provident eligendi. Exercitationem, voluptates.</p>
+            <p class="second">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate dolorum sed est magnam cumque iusto. Nulla nihil
+                repudiandae necessitatibus cum quibusdam reiciendis alias
+                incidunt magni beatae quae, aliquid quia blanditiis!
+            </p>
+
+            <p class="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Distinctio perspiciatis voluptatibus eaque numquam maiores
+                dignissimos saepe velit. Consequatur, consequuntur. Repellendus
+                voluptatem commodi quaerat! Rem quibusdam placeat fugit eum
+                repellat at.</p>
+        </div>
+
+
+        <script src="
+            https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+            "></script>
+        <script>
+    $(document).ready(function(){
+        $(".first").remove()
+        //deleting all child
+        $("#parent").empty().html("<h1>All deleted</h1>")
+        
+    })
+
+    
+</script>
+    </body>
+</html>
