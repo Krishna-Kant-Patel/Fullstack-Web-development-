@@ -6,12 +6,15 @@
 # else:
 #     print("Wrong answer try again")
 
-key = "name"
+key = input("enter the key you are searching for: ")
 person = {
-    "name": "Kalob",
-    "profession": "Coding teacher",
+    "name": "krishna",
+    "profession": "Coder",
 }
 
 if key in person:
     print("Name is a valid dictionary key in the person object")
+else:
+    print('not vailid key')
+
 
