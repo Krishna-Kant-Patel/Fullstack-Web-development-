@@ -3,5 +3,9 @@
 {% block title %}Home Page{% endblock  %}
 
 {%block body %}
-<h1>This is our home page</h1>
+    {% for post in Data %}
+      {{post.text}}
+      <hr/>
+    {% endfor %}
+
 {% endblock %}
