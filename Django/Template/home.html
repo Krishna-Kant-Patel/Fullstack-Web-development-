@@ -1,11 +1,20 @@
 {% extends 'base.html' %}
+{% load thumbnail %}
 
 {% block title %}Home Page{% endblock  %}
 
 {%block body %}
+<a href=" {% url 'MyApp:add' %}"> Add new post &rarr;</a> 
+<hr/>
     {% for post in Data %}
       {{post.text}}
-      <hr/>
+      <br/>
+      <a href="{%url 'MyApp:detail' post.id %}">
+      {% thumbnail post.image "300x300" crop="center" as im %}
+    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+      </a>
+    <hr/>
+    {% endthumbnail %}
     {% endfor %}
 
 {% endblock %}
