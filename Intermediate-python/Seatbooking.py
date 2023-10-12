@@ -21,6 +21,7 @@ class SeatBookingSystem:
             print(f"Seat {seat_number} is not booked.")
     
     def recommend_seat(self):
+        print("availble seats:- ")
         print(self.available_seats)
 
 
